@@ -1,0 +1,52 @@
+.container h1 {
+  color: #ccc;
+}
+.container li {
+  list-style: none;
+  border: 1px solid black;
+}
+.container li .name {
+  background-color: beige;
+  color: #ccc;
+  text-align: center;
+  font-size: 25px;
+}
+.container li .age {
+  background-color: violet;
+  color: #ccc;
+  text-align: center;
+  font-size: 25px;
+}
+.container .plus {
+  font-weight: bold;
+}
+.container .plus-s {
+  font-size: 20px;
+}
+.container .plus-l {
+  font-size: 50px;
+}
+.container .plus-m {
+  font-size: 35px;
+}
+.container .box {
+  font-weight: 700;
+  font-size: 50px;
+}
+.container .boxWrap {
+  width: 50px;
+  height: 30px;
+  background-color: red;
+  padding: 20px;
+  font-size: 5px;
+  margin: 4px;
+}
+.container .box2 {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
+.container .box3:nth-child(1) {
+  background-color: aqua;
+  width: 300px;
+}/*# sourceMappingURL=main.css.map */

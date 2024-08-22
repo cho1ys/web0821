@@ -1,0 +1,54 @@
+$color-whitegray : #ccc;
+$color-gray : #333;
+$color-white : white;
+$px_default : 20px;
+@mixin card-style($padding : 15px, $margin_px : $px_default, $border_r : 4px){
+    border: 1px solid $color-whitegray;
+    border-radius: $border_r;
+    margin-bottom: $margin_px;
+    padding : $padding;
+}
+body{
+    background-color: $color-whitegray;
+    .container{
+        padding : $px_default;
+        .header{
+            background-color: green;
+            color : $color-white;
+            padding : $px_default;
+        }
+        .nav{
+            display: flex;
+            background-color: $color-gray;
+            padding : $px_default;
+            .nav-item{
+                color: $color-white;
+                margin : 0 15px;
+            }
+        }
+        .content{
+            background-color: beige;
+            padding : $px_default;
+            .card{
+                @include card-style();
+                .card-title{
+                  font-size: $px_default;
+                  color : $color-gray;
+                  margin-bottom : ($px_default / 2);
+                }
+                .card-description{
+                    font-size : 13px;
+                    color : $color-gray;
+                }
+            }
+        }
+        .footer{
+            background-color: $color-gray;
+            color : $color-white;
+            padding : ($px_default / 2);
+            text-align: center;
+        }
+    }
+}
+
+
